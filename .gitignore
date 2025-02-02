@@ -1,0 +1,55 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.terraform.lock.hcl
+.terraform/
+
+# Terragrunt files
+.terragrunt-cache/
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfvars files may contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local dev
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore crash log files
+crash.log
+crash.*.log
+
+# Ignore any .tfplan files
+*.tfplan
+
+# Ignore Mac/OSX system files
+.DS_Store
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore log files
+*.log
+
+# Ignore any generated files
+*.generated.*
+
+# Ignore any sensitive or environment-specific files
+**/secrets.tfvars
+**/local.tfvars
+
+# Ignore AWS credentials file
+.aws/credentials
