@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Define the directory structure
 DIRS=(
