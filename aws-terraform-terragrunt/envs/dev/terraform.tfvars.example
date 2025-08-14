@@ -1,0 +1,14 @@
+# Development Environment Configuration
+# Copy this file to terraform.tfvars and update with your values
+
+# S3 Bucket Configuration
+bucket_name = "my-dev-bucket"  # Replace with your bucket base name
+
+# Environment Tags
+tags = {
+  Environment = "development"
+  Project     = "terraform-terragrunt-demo"
+  Owner       = "your-team"
+  CostCenter  = "dev-ops"
+  ManagedBy   = "terraform"
+}

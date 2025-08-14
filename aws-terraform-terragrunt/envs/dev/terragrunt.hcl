@@ -13,7 +13,7 @@ terraform {
 remote_state {
   backend = "s3"
   config = {
-    bucket  = "terraform-state-r1w9v5"
+    bucket  = "your-terraform-state-bucket"  # Replace with your S3 bucket name
     key     = "dev/terraform.tfstate"
     region  = "us-west-2"
     encrypt = true

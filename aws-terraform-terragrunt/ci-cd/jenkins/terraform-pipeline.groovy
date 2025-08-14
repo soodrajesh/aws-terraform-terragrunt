@@ -6,13 +6,13 @@ pipeline {
     }
 
     environment {
-        AWS_PROFILE = params.ENV == 'dev' ? 'account1-admin' : 'account2-admin'
+        AWS_PROFILE = params.ENV == 'dev' ? 'your-dev-profile' : 'your-prod-profile'  # Replace with your AWS profiles
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'git@bitbucket.org:your-repo.git'
+                git branch: 'main', url: 'git@github.com:your-org/your-repo.git'  # Replace with your repository URL
             }
         }
 

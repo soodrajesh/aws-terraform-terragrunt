@@ -1,4 +1,4 @@
 provider "aws" {
   region  = "us-west-2"
-  profile = "rsood-private"  # Dev account
+  profile = "your-dev-profile"  # Replace with your development AWS profile
 }

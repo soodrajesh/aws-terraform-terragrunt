@@ -53,3 +53,99 @@ crash.*.log
 
 # Ignore AWS credentials file
 .aws/credentials
+
+# AWS specific files
+.aws/
+aws.config
+aws.credentials
+~/.aws/
+
+# SSH keys and certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files with sensitive data
+*.backup
+*.bak
+*.orig
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Node modules (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Shell scripts with sensitive data
+*.env
+.env.local
+.env.production
+.env.development
+
+# Terraform specific sensitive files
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+secrets.tf
+secrets.tfvars
+
+# Jenkins specific sensitive files
+jenkins_home/
+.jenkins/
+secrets/
+credentials.xml

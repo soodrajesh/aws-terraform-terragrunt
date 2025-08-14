@@ -1,0 +1,15 @@
+# Production Environment Configuration
+# Copy this file to terraform.tfvars and update with your values
+
+# S3 Bucket Configuration
+bucket_name = "my-prod-bucket"  # Replace with your bucket base name
+
+# Environment Tags
+tags = {
+  Environment = "production"
+  Project     = "terraform-terragrunt-demo"
+  Owner       = "your-team"
+  CostCenter  = "prod-ops"
+  ManagedBy   = "terraform"
+  Compliance  = "soc2"
+}
